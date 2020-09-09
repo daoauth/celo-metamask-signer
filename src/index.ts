@@ -1,4 +1,5 @@
 import { ensureLeading0x } from '@celo/base/lib/address'
+import { toTxResult } from '@celo/contractkit/lib/utils/tx-result'
 // @ts-ignore-next-line
 import { bytes as Bytes, hash as Hash, RLP } from 'eth-lib'
 import * as helpers from 'web3-core-helpers'
@@ -207,7 +208,7 @@ export async function sendTransaction (kit: any, web3: any, web3Tx: any): Promis
 
     const encodeTx = encodeTransaction(celoTx, { v, s, r })
 
-    return kit.web3.eth.sendSignedTransaction(encodeTx.raw)
+    return toTxResult(kit.web3.eth.sendSignedTransaction(encodeTx.raw))
   } catch (error) {
     console.error(error)
     return null
