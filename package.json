@@ -1,6 +1,6 @@
 {
   "name": "@did-kr-cg/celo-metamask-signer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "metamask celo tx signer",
   "main": "/lib/index.js",
   "scripts": {
