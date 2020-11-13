@@ -1,5 +1,8 @@
 # Celo MetaMask Signer
 
+This project has been moved to [Celo Web Signer](https://github.com/dexfair/celo-web-signer)
+
+# Usage
 ```
 npm i @did-kr-cg/celo-metamask-signer
 ```
